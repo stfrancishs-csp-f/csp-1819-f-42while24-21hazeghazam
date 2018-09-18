@@ -2,21 +2,26 @@
 int main(void)
 {
     int sum=0;
-    int k;
+    int k=11;
 
-    for (k=0;k<5;k++)
+   // for(k=0;k<5;k++)
+   while(k<=11)
     {
-        sum+=k; //use something different in "while" version
+        sum = k - 1;
+        k--;
     }
 
-    printf ("%d\n",sum);
+    printf("%d\n",sum);
 
-    k=5;
+    //k=6;
 
-    while (k>0) {
-        k=k-1; //use something different in "for" version
+    for(k=10;k>0;k--) {
+       sum = k - 1; //use something different in "for" version
         printf ("%d\n", k);
+
     }
+
+    printf("Blast Off!!!!!\n");
 
 }
 
